@@ -1,26 +1,25 @@
 .. DesignPatternsPHP
 
-=================
-DesignPatternsPHP
-=================
+=================================
+디자인패턴PHP (DesignPatternsPHP)
+=================================
 
 .. image:: https://readthedocs.org/projects/designpatternsphp/badge/?version=latest
    :target: https://readthedocs.org/projects/designpatternsphp/?badge=latest
    :alt: Documentation Status
 
-This is a collection of known `design patterns`_ and some sample code how
-to implement them in PHP. Every pattern has a small list of examples
-(most of them from Zend Framework, Symfony2 or Doctrine2 as I'm most
-familiar with this software).
+이 문서는 일반적으로 디자인패턴(`Design Pattern`_)이라고 알려진 내용을 다루며, PHP에서 어떻게 구현해야하는지 샘플
+코드를 담고 있습니다. 모든 패턴은 조금이나마 예제를 다루고 있습니다. (그리고 그 예제의 대부분은 사용하기에 친근한 Zend
+Framework, Symfony2, Doctrine2에서 가져왔습니다.)
 
-I think the problem with patterns is that often people do know them but
-don't know when to apply which.
+디자인 패턴에서의 문제는 종종 사람들은 그것들을 알지만 정작 언제 적용해야하는지 모른다는 것입니다.
 
-Patterns
---------
+디자인패턴
+------
 
-The patterns can be structured in roughly three different categories.
-Please click on **the title of every pattern's page** for a full explanation of the pattern on Wikipedia.
+이 문서에서는 디자인패턴을 크게 3가지의 다른 카테고리로 분류하였습니다. 위키피디아(Wikipedia)에 설명되어있는 디자인 패턴은 **각각의 문서의 제목**을 클릭하시면 읽으실 수 있습니다.
+
+(역자 : 디자인 패턴의 이름은 따로 한국어로 번역하지 않았습니다. :smile:)
 
 .. toctree::
    :titlesonly:
@@ -66,7 +65,7 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-.. _`design patterns`: http://en.wikipedia.org/wiki/Software_design_pattern
+.. _`Design Pattern`: http://en.wikipedia.org/wiki/Software_design_pattern
 .. _`PHP CodeSniffer`: https://github.com/squizlabs/PHP_CodeSniffer
 .. _`PSR2 standard`: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
 .. _`Dominik Liebler`: https://github.com/domnikl
