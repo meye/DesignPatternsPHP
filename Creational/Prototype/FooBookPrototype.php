@@ -10,7 +10,7 @@ class FooBookPrototype extends BookPrototype
     protected $category = 'Foo';
 
     /**
-     * empty clone
+     * 빈 클론 매서드
      */
     public function __clone()
     {

@@ -1,29 +1,28 @@
 `Prototype`_
 ============
 
-Purpose
--------
+사용 목적
+---------
 
-To avoid the cost of creating objects the standard way (new Foo()) and
-instead create a prototype and clone it.
+일반적으로 사용하는 객체 생성(new Foo())의 비용을 피하기 위해서 사용합니다. 그리고 그 대신에 프로토타입을 생성하고
+그것을 복제(clone)합니다.
 
-Examples
---------
+예시
+----
 
--  Large amounts of data (e.g. create 1,000,000 rows in a database at
-   once via a ORM).
+-  많은 양의 데이터. (이를테면, ORM을 통해 데이터베이스에서 한번에 1,000,000줄을 생성할 때.)
 
-UML Diagram
------------
+UML 다이어그램
+--------------
 
 .. image:: uml/uml.png
    :alt: Alt Prototype UML Diagram
    :align: center
 
-Code
+코드
 ----
 
-You can also find these code on `GitHub`_
+코드는 또한 `GitHub`_ 에서 볼 수 있습니다.
 
 index.php
 
