@@ -7,12 +7,12 @@ use DesignPatterns\Creational\AbstractFactory\Text as BaseText;
 /**
  * Class Text
  *
- * Text is a text component with a JSON rendering
+ * Text 는 JSON 렌더링을 위한 구체적인 글자들 입니다.
  */
 class Text extends BaseText
 {
     /**
-     * some crude rendering from JSON output
+     * JSON의 출력 일부분을 가감없이 렌더링합니다.
      *
      * @return string
      */
