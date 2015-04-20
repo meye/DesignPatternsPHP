@@ -1,21 +1,20 @@
-<?php
+1<?php
 
 namespace DesignPatterns\Creational\AbstractFactory;
 
 /**
  * class AbstractFactory
  *
- * Sometimes also known as "Kit" in a GUI libraries.
+ * 때때로 GUI 라이브러리의 "Kit"라고 알려져 있습니다.
  *
- * This design pattern implements the Dependency Inversion Principle since
- * it is the concrete subclass which creates concrete components.
+ * abstract factory 패턴은 구체적인 구성 요소를 생성해야하는 추상 서브클래스이기 때문에 역 의존성 원리를 이해해서 구현해야합니다.
  *
- * In this case, the abstract factory is a contract for creating some components
- * for the web. There are two components : Text and Picture. There is two ways
- * of rendering : HTML or JSON.
  *
- * Therefore 4 concretes classes, but the client just need to know this contract
- * to build a correct http response (for a html page or for an ajax request)
+ * 이 예제는 abstract factory를 웹의 몇몇 구성 요소를 만들기 위해 사용하였습니다. 두 개의 구성요소 : Text와 Picture. 두가지 방법으로
+ * 렌더링을 합니다. : HTML 또는 JSON
+ *
+ * 4개의 추상 클래스들은 웹으로 동작하기 때문에 클래스들의 (html page 또는 AJAX request와 같은 요청에 대한) 정확한 http response가
+ * 필요합니다.  
  */
 abstract class AbstractFactory
 {
