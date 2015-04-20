@@ -1,10 +1,7 @@
 # Creational
 
-In software engineering, creational design patterns are design patterns that
-deal with object creation mechanisms, trying to create objects in a manner
-suitable to the situation. The basic form of object creation could result in
-design problems or added complexity to the design. Creational design patterns
-solve this problem by somehow controlling this object creation.
+소프트웨어 공학에서 창조적 디자인 패턴이란, 객체 생성 메카니즘을 다루고 상황에 적절한 객체를 만드려고 하는 것이다. 객체 생성의 기본 형태는
+디자인 문제나 또는 복잡한 디자인을 추가하는 것이다. 창조적 디자인 패턴은 객체 생성을 어떻게든 제어해서 이 문제를 해결하는 것이다.
 
 * [AbstractFactory](AbstractFactory) [:notebook:](http://en.wikipedia.org/wiki/Abstract_factory_pattern)
 * [Builder](Builder) [:notebook:](http://en.wikipedia.org/wiki/Builder_pattern)
