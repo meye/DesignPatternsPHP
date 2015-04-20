@@ -9,25 +9,25 @@ class Multiton
 {
     /**
      *
-     * the first instance
+     * 첫번째 인스턴스
      */
     const INSTANCE_1 = '1';
 
     /**
      *
-     * the second instance
+     * 두번째 인스턴스
      */
     const INSTANCE_2 = '2';
 
     /**
-     * holds the named instances
+     * 이름 있는 인스턴스들을 저장
      *
      * @var array
      */
     private static $instances = array();
 
     /**
-     * should not be called from outside: private!
+     * 외부에서 호출되면 안됨: private!
      *
      */
     private function __construct()
@@ -35,8 +35,8 @@ class Multiton
     }
 
     /**
-     * gets the instance with the given name, e.g. Multiton::INSTANCE_1
-     * uses lazy initialization
+     * 주어진 이름을 통해 인스턴스를 구합니다. e.g. Multiton::INSTANCE_1
+     * 게으른 초기화(Lazy Initialization)를 사용
      *
      * @param string $instanceName
      *
@@ -52,7 +52,7 @@ class Multiton
     }
 
     /**
-     * prevent instance from being cloned
+     * clone에 의해서 호출 되는 것 방지
      *
      * @return void
      */
@@ -61,7 +61,7 @@ class Multiton
     }
 
     /**
-     * prevent instance from being unserialized
+     * unserialized에 의해 인스턴스화 방지
      *
      * @return void
      */
