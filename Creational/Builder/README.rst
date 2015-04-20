@@ -1,36 +1,33 @@
 `Builder`_
 ==========
 
-Purpose
+사용 목적
 -------
 
-Builder is an interface that build parts of a complex object.
+Builder는 복잡한 객체의 일부를 구현 하는 인터페이스 입니다.
 
-Sometimes, if the builder has a better knowledge of what it builds, this
-interface could be an abstract class with default methods (aka adapter).
+builder가 어떻게 구현한 것들 보다 더 나은 지식을 가지며, 때때로 이 인터페이스는 기본 메소드(일명 adapter)와 추상 클래스가 될 수 있습니다.
 
-If you have a complex inheritance tree for objects, it is logical to
-have a complex inheritance tree for builders too.
+만약 객체들에 복잡한 상속 트리가 있는 경우에는 구현해 놓은 결과물들을 위해 복잡한 상속 트리를 가졌다는 것이 논리적이다.
 
-Note: Builders have often a fluent interface, see the mock builder of
-PHPUnit for example.
+Note: Builder들은 보통 유동적인 인터페이스를 가지는데, PHPUnit의 mock builder가 그 예 입니다.
 
-Examples
+예
 --------
 
 -  PHPUnit: Mock Builder
 
-UML Diagram
+UML 다이어그램
 -----------
 
 .. image:: uml/uml.png
    :alt: Alt Builder UML Diagram
    :align: center
 
-Code
+코드
 ----
 
-You can also find these code on `GitHub`_
+코드는 또한 `GitHub`_ 에서 볼 수 있습니다.
 
 Director.php
 
