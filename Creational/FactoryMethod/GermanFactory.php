@@ -18,8 +18,7 @@ class GermanFactory extends FactoryMethod
                 break;
             case parent::FAST:
                 $obj = new Porsche();
-                // we can specialize the way we want some concrete Vehicle since
-                // we know the class
+                // 우리는 클래스를 알고있기 때문에 우리가 원하는 구체적인 탈것을 특별하게 만들 수 있습니다.
                 $obj->addTuningAMG();
 
                 return $obj;
