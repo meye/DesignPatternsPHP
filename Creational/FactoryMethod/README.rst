@@ -1,32 +1,29 @@
 `Factory Method`_
 =================
 
-Purpose
+사용 목적
 -------
 
-The good point over the SimpleFactory is you can subclass it to
-implement different ways to create objects
+SimpleFactory를 통해 좋은점은 서브클래스가 객체를 여러 방법으로 구현할 수 있다는 것 입니다.
 
-For simple case, this abstract class could be just an interface
+간단한 예로는, 이 추상 클래스는 인터페이스가 될 수 있다는 것입니다.
 
-This pattern is a "real" Design Pattern because it achieves the
-"Dependency Inversion Principle" a.k.a the "D" in S.O.L.I.D principles.
+이 패턴은 "real" 디자인 패턴 입니다. 왜냐하면 S.O.L.I.D 원리에서 "D", 일명 "역 의존성 원리"를 달성해야 하기 때문입니다.
 
-It means the FactoryMethod class depends on abstractions, not concrete
-classes. This is the real trick compared to SimpleFactory or
-StaticFactory.
+이 말은 FactoryMethod 클래스는 구체적인 클래스가 아닌, 추상화에 따른다는 것입니다. 이것은 SimpleFactory나 StaticFactory에 비하면 진짜
+기술입니다.
 
-UML Diagram
+UML 다이어그램
 -----------
 
 .. image:: uml/uml.png
    :alt: Alt FactoryMethod UML Diagram
    :align: center
 
-Code
+코드
 ----
 
-You can also find these code on `GitHub`_
+코드는 또한 `GitHub`_ 에서 볼 수 있습니다.
 
 FactoryMethod.php
 
