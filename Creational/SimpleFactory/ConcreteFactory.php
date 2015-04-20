@@ -13,8 +13,7 @@ class ConcreteFactory
     protected $typeList;
 
     /**
-     * You can imagine to inject your own type list or merge with
-     * the default ones...
+     * 사용자는 기본 값에 자신이 가진 list 타입을 주입하거나, 합칠 것이라고 상상할 수 있다. 
      */
     public function __construct()
     {
