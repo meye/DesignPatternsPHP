@@ -17,21 +17,21 @@ or [Download as PDF/Epub](https://readthedocs.org/projects/designpatternsphp/dow
 
 이 문서에서는 디자인패턴을 크게 3가지의 다른 카테고리로 분류하였습니다. 위키피디아(Wikipedia)에 설명되어있는 전체 디자인 패턴은 [여기:notebook:](http://en.wikipedia.org/wiki/Software_design_pattern)에서 읽으실 수 있습니다.
 
-(역자 : 디자인 패턴의 이름은 따로 한국어로 번역하지 않았습니다. :smile:)
+(역자 : 디자인 패턴의 이름은 병행 표기하였습니다. :smile:)
 
-### [Creational](Creational)
+### [생성 패턴(Creational)](Creational)
 
-* [AbstractFactory](Creational/AbstractFactory) [:notebook:](http://en.wikipedia.org/wiki/Abstract_factory_pattern)
-* [Builder](Creational/Builder) [:notebook:](http://en.wikipedia.org/wiki/Builder_pattern)
-* [FactoryMethod](Creational/FactoryMethod) [:notebook:](http://en.wikipedia.org/wiki/Factory_method_pattern)
-* [Multiton](Creational/Multiton) (is considered an anti-pattern! :no_entry:)
-* [Pool](Creational/Pool) [:notebook:](http://en.wikipedia.org/wiki/Object_pool_pattern)
-* [Prototype](Creational/Prototype) [:notebook:](http://en.wikipedia.org/wiki/Prototype_pattern)
-* [SimpleFactory](Creational/SimpleFactory)
-* [Singleton](Creational/Singleton) [:notebook:](http://en.wikipedia.org/wiki/Singleton_pattern) (is considered an anti-pattern! :no_entry:)
-* [StaticFactory](Creational/StaticFactory)
+* [추상팩토리(AbstractFactory)](Creational/AbstractFactory) [:notebook:](http://en.wikipedia.org/wiki/Abstract_factory_pattern)
+* [빌더(Builder)](Creational/Builder) [:notebook:](http://en.wikipedia.org/wiki/Builder_pattern)
+* [팩토리메소드(FactoryMethod)](Creational/FactoryMethod) [:notebook:](http://en.wikipedia.org/wiki/Factory_method_pattern)
+* [멀티턴(Multiton)](Creational/Multiton) (is considered an anti-pattern! :no_entry:)
+* [풀(Pool)](Creational/Pool) [:notebook:](http://en.wikipedia.org/wiki/Object_pool_pattern)
+* [프로토타입(Prototype)](Creational/Prototype) [:notebook:](http://en.wikipedia.org/wiki/Prototype_pattern)
+* [팩토리(SimpleFactory)](Creational/SimpleFactory)
+* [싱글턴(Singleton)](Creational/Singleton) [:notebook:](http://en.wikipedia.org/wiki/Singleton_pattern) (is considered an anti-pattern! :no_entry:)
+* [정적팩토리(StaticFactory)](Creational/StaticFactory)
 
-### [Structural](Structural)
+### [구조 패턴(Structural)](Structural)
 
 * [Adapter](Structural/Adapter) [:notebook:](http://en.wikipedia.org/wiki/Adapter_pattern)
 * [Bridge](Structural/Bridge) [:notebook:](http://en.wikipedia.org/wiki/Bridge_pattern)
@@ -39,12 +39,12 @@ or [Download as PDF/Epub](https://readthedocs.org/projects/designpatternsphp/dow
 * [DataMapper](Structural/DataMapper) [:notebook:](http://en.wikipedia.org/wiki/Data_mapper_pattern)
 * [Decorator](Structural/Decorator) [:notebook:](http://en.wikipedia.org/wiki/Decorator_pattern)
 * [DependencyInjection](Structural/DependencyInjection) [:notebook:](http://en.wikipedia.org/wiki/Dependency_injection)
-* [Facade](Structural/Facade) [:notebook:](http://en.wikipedia.org/wiki/Facade_pattern)
+* [파사드(Facade)](Structural/Facade) [:notebook:](http://en.wikipedia.org/wiki/Facade_pattern)
 * [FluentInterface](Structural/FluentInterface) [:notebook:](http://en.wikipedia.org/wiki/Fluent_interface)
 * [Proxy](Structural/Proxy) [:notebook:](http://en.wikipedia.org/wiki/Proxy_pattern)
 * [Registry](Structural/Registry) [:notebook:](http://en.wikipedia.org/wiki/Service_locator_pattern)
 
-### [Behavioral](Behavioral)
+### [행동 패턴(Behavioral)](Behavioral)
 
 * [ChainOfResponsibilities](Behavioral/ChainOfResponsibilities) [:notebook:](http://en.wikipedia.org/wiki/Chain_of_responsibility_pattern)
 * [Command](Behavioral/Command) [:notebook:](http://en.wikipedia.org/wiki/Command_pattern)
