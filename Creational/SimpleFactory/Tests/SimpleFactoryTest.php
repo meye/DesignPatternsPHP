@@ -5,7 +5,7 @@ namespace DesignPatterns\Creational\SimpleFactory\Tests;
 use DesignPatterns\Creational\SimpleFactory\ConcreteFactory;
 
 /**
- * SimpleFactoryTest tests the Simple Factory pattern
+ * Simple Factory pattern 테스트 입니다.
  */
 class SimpleFactoryTest extends \PHPUnit_Framework_TestCase
 {

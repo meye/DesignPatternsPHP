@@ -67,7 +67,7 @@ Ferrari.php
    :language: php
    :linenos:
 
-Test
+테스트
 ----
 
 Tests/FactoryMethodTest.php
