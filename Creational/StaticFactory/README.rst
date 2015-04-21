@@ -20,7 +20,7 @@ UML 다이어그램
    :alt: Alt StaticFactory UML Diagram
    :align: center
 
-Code
+코드
 ----
 
 코드는 또한 `GitHub`_ 에서 볼 수 있습니다.
@@ -49,7 +49,7 @@ FormatNumber.php
    :language: php
    :linenos:
 
-Test
+테스트
 ----
 
 Tests/StaticFactoryTest.php
