@@ -13,7 +13,7 @@ class Singleton
     private static $instance;
     
     /**
-     * gets the instance via lazy initialization (created on first usage)
+     * 지연 초기화를 통해 인스턴스를 가져옵니다.(첫 번째 구문에서 생성합니다.)
      *
      * @return self
      */

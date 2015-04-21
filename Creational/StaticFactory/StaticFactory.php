@@ -3,8 +3,8 @@
 namespace DesignPatterns\Creational\StaticFactory;
 
 /**
- * Note1: Remember, static => global => evil
- * Note2: Cannot be subclassed or mock-upped or have multiple different instances
+ * Note1: 기억하세요, static => global => evil
+ * Note2: 서브클래스, 모형(mock-up), 여러 인스턴스들을 가질 수 없습니다.
  */
 class StaticFactory
 {

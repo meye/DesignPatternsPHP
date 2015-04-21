@@ -1,22 +1,19 @@
 Static Factory
 ==============
 
-Purpose
+사용 목적
 -------
 
-Similar to the AbstractFactory, this pattern is used to create series of
-related or dependent objects. The difference between this and the
-abstract factory pattern is that the static factory pattern uses just
-one static method to create all types of objects it can create. It is
-usually named ``factory`` or ``build``.
+이 패턴은 AbstractFactory와 유사하고, 종속 객체들이나 연관된 집합을 만드는데 사용합니다. 이 패턴과 abstract factory 패턴 사이의 차이점은
+static factory 패턴이 만들 수 있는 모든 타입의 객체를 만드는 하나의 정적인 메서드를 사용한다는 것입니다. 이 패턴은 보통 ``factory`` 또는
+``build``라고 합니다.
 
-Examples
+예시
 --------
 
--  Zend Framework: ``Zend_Cache_Backend`` or ``_Frontend`` use a factory
-   method create cache backends or frontends
+-  Zend Framework: ``Zend_Cache_Backend`` 또는 ``_Frontend``는 팩토리 메서드를 사용하고 캐시 백엔드 또는, 프론트엔드를 만듭니다.
 
-UML Diagram
+UML 다이어그램
 -----------
 
 .. image:: uml/uml.png
@@ -26,7 +23,7 @@ UML Diagram
 Code
 ----
 
-You can also find these code on `GitHub`_
+코드는 또한 `GitHub`_ 에서 볼 수 있습니다.
 
 StaticFactory.php
 
