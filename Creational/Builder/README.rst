@@ -1,8 +1,8 @@
-`Builder`_
-==========
+빌더(`Builder`_)
+================
 
 사용 목적
--------
+---------
 
 Builder는 복잡한 객체의 일부를 구현 하는 인터페이스 입니다.
 
@@ -12,13 +12,13 @@ builder가 어떻게 구현한 것들 보다 더 나은 지식을 가지며, 때
 
 Note: Builder들은 보통 유동적인 인터페이스를 가지는데, PHPUnit의 mock builder가 그 예 입니다.
 
-예
---------
+예시
+----
 
 -  PHPUnit: Mock Builder
 
 UML 다이어그램
------------
+--------------
 
 .. image:: uml/uml.png
    :alt: Alt Builder UML Diagram
@@ -90,7 +90,7 @@ Parts/Door.php
    :linenos:
 
 테스트
-----
+------
 
 Tests/DirectorTest.php
 

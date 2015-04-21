@@ -1,5 +1,5 @@
-`Prototype`_
-============
+프로토타입(`Prototype`_)
+========================
 
 사용 목적
 ---------
@@ -49,7 +49,7 @@ FooBookPrototype.php
    :linenos:
 
 테스트
-----
+------
 
 .. _`GitHub`: https://github.com/domnikl/DesignPatternsPHP/tree/master/Creational/Prototype
 .. _`Prototype`: http://en.wikipedia.org/wiki/Prototype_pattern

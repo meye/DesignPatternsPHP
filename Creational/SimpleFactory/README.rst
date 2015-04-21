@@ -1,8 +1,8 @@
-Simple Factory
-==============
+팩토리(Simple Factory)
+======================
 
 사용 목적
--------
+---------
 
 ConcreteFactory는 simple factory 패턴입니다.
 
@@ -12,7 +12,7 @@ simple factory는 정적이지 않기 때문에 static factory와는 다릅니�
 그러므로, 여러 팩토리들과, 다른 매개변수를 가지고 서브클래스를 만들거나, 모형(mock-up)을 만들 수 있습니다.
 
 UML 다이어그램
------------
+--------------
 
 .. image:: uml/uml.png
    :alt: Alt SimpleFactory UML Diagram
@@ -48,7 +48,7 @@ Scooter.php
    :linenos:
 
 테스트
-----
+------
 
 Tests/SimpleFactoryTest.php
 

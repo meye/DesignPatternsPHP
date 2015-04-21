@@ -35,6 +35,6 @@ Multiton.php
    :linenos:
 
 테스트
-----
+------
 
 .. _`GitHub`: https://github.com/domnikl/DesignPatternsPHP/tree/master/Creational/Multiton

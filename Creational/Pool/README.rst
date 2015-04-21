@@ -15,7 +15,7 @@
 메모리를 차지하는)은 아마도 효과적이지 않을 수 있고 오히려 성능을 감소시킬 수 있습니다.
 
 UML 다이어그램
------------
+--------------
 
 .. image:: uml/uml.png
    :alt: Alt Pool UML Diagram
@@ -44,8 +44,8 @@ Worker.php
    :language: php
    :linenos:
 
-Test
-----
+테스트
+------
 
 Tests/PoolTest.php
 

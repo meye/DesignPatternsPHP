@@ -1,14 +1,14 @@
-`Abstract Factory`_
-===================
+추상팩토리(`Abstract Factory`_)
+===============================
 
 사용 목적
--------
+---------
 
 관계에 대한 집합을 만들거나, 의존성 없이 자신의 추상 클래스를 지정하게 해줍니다.일반적으로 생성된 클래스들은 모두 같은 인터페이스를 구현해 만듭니다. abstract factory의 클래스들은
 어떻게 동작되는지 알고, 어떻게 객체가 어떻게 만들어지는지 상관하지 않습니다.
 
 UML 다이어그램
------------
+--------------
 
 .. image:: uml/uml.png
    :alt: Alt AbstractFactory UML Diagram
@@ -80,7 +80,7 @@ Html/Text.php
    :linenos:
 
 테스트
-----
+------
 
 Tests/AbstractFactoryTest.php
 

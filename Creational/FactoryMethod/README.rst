@@ -1,8 +1,8 @@
-`Factory Method`_
-=================
+팩토리메소드(`Factory Method`_)
+===============================
 
 사용 목적
--------
+---------
 
 SimpleFactory를 통해 좋은점은 서브클래스가 객체를 여러 방법으로 구현할 수 있다는 것 입니다.
 
@@ -14,7 +14,7 @@ SimpleFactory를 통해 좋은점은 서브클래스가 객체를 여러 방법�
 기술입니다.
 
 UML 다이어그램
------------
+--------------
 
 .. image:: uml/uml.png
    :alt: Alt FactoryMethod UML Diagram
@@ -68,7 +68,7 @@ Ferrari.php
    :linenos:
 
 테스트
-----
+------
 
 Tests/FactoryMethodTest.php
 
