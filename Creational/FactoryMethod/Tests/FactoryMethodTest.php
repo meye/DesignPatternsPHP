@@ -7,7 +7,7 @@ use DesignPatterns\Creational\FactoryMethod\GermanFactory;
 use DesignPatterns\Creational\FactoryMethod\ItalianFactory;
 
 /**
- * FactoryMethodTest tests the factory method pattern
+ * factory method pattern 테스트 입니다.
  */
 class FactoryMethodTest extends \PHPUnit_Framework_TestCase
 {
@@ -30,8 +30,7 @@ class FactoryMethodTest extends \PHPUnit_Framework_TestCase
      */
     public function testCreation(FactoryMethod $shop)
     {
-        // this test method acts as a client for the factory. We don't care
-        // about the factory, all we know is it can produce vehicle
+        // 이 테스트 메서드는 팩토리의 사용자 역할을 합니다. 이 메서트가 팩토리를 신경쓰지 않고 탈 것을 만들 수 있다는 것을 알 수 있습니다.
         foreach ($this->type as $oneType) {
             $vehicle = $shop->create($oneType);
             $this->assertInstanceOf('DesignPatterns\Creational\FactoryMethod\VehicleInterface', $vehicle);

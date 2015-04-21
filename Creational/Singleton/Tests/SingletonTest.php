@@ -5,7 +5,7 @@ namespace DesignPatterns\Creational\Singleton\Tests;
 use DesignPatterns\Creational\Singleton\Singleton;
 
 /**
- * SingletonTest tests the singleton pattern
+ * singleton pattern 테스트 입니다.
  */
 class SingletonTest extends \PHPUnit_Framework_TestCase
 {

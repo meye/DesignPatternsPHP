@@ -5,7 +5,7 @@ namespace DesignPatterns\Creational\StaticFactory\Tests;
 use DesignPatterns\Creational\StaticFactory\StaticFactory;
 
 /**
- * Tests for Static Factory pattern
+ * Static Factory 패턴 테스트 입니다.
  *
  */
 class StaticFactoryTest extends \PHPUnit_Framework_TestCase

@@ -8,7 +8,7 @@ use DesignPatterns\Creational\Builder\BikeBuilder;
 use DesignPatterns\Creational\Builder\BuilderInterface;
 
 /**
- * DirectorTest tests the builder pattern
+ * builder pattern 테스트 입니다.
  */
 class DirectorTest extends \PHPUnit_Framework_TestCase
 {
@@ -29,8 +29,7 @@ class DirectorTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Here we test the build process. Notice that the client don't know
-     * anything about the concrete builder.
+     * 여기서 빌드 프로세스를 테스트 합니다. 이 메스트는 전체적인 builder에 대해 아무것도 모른다는 것을 알 수 있습니다.
      *
      * @dataProvider getBuilder
      */
