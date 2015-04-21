@@ -7,7 +7,7 @@ use DesignPatterns\Creational\AbstractFactory\HtmlFactory;
 use DesignPatterns\Creational\AbstractFactory\JsonFactory;
 
 /**
- * AbstractFactoryTest tests concrete factories
+ * AbstractFactoryTest로 전체적인 팩토리들을 테스트 합니다.
  */
 class AbstractFactoryTest extends \PHPUnit_Framework_TestCase
 {
@@ -20,9 +20,7 @@ class AbstractFactoryTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * This is the client of factories. Note that the client does not
-     * care which factory is given to him, he can create any component he
-     * wants and render how he wants.
+     * 이 메서드는 팩토리들을 사용하는데, 메서드에 주어진 팩토리를 신경쓰지 않고, 원하는데로 랜더링 하고 원하는 구성 요소를 만듭니다.
      *
      * @dataProvider getFactories
      */
@@ -36,9 +34,8 @@ class AbstractFactoryTest extends \PHPUnit_Framework_TestCase
 
         $this->assertContainsOnly('DesignPatterns\Creational\AbstractFactory\MediaInterface', $article);
 
-        /* this is the time to look at the Builder pattern. This pattern
-         * helps you to create complex object like that article above with
-         * a given Abstract Factory
+        /**
+         * Builder 패턴을 볼 시간입니다. 이 패턴은 주어진 Abstract 팩토리를 넘어 복잡한 객체 생성 문제를 도와줍니다.
          */
     }
 }
