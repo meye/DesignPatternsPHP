@@ -1,28 +1,27 @@
 Simple Factory
 ==============
 
-Purpose
+사용 목적
 -------
 
-ConcreteFactory is a simple factory pattern.
+ConcreteFactory는 simple factory 패턴입니다.
 
-It differs from the static factory because it is NOT static and as you
-know: static => global => evil!
+simple factory는 정적이지 않기 때문에 static factory와는 다릅니다.
+숙지할 점: static => global => evil!
 
-Therefore, you can have multiple factories, differently parametrized,
-you can subclass it and you can mock-up it.
+그러므로, 여러 팩토리들과, 다른 매개변수를 가지고 서브클래스를 만들거나, 모형(mock-up)을 만들 수 있습니다.
 
-UML Diagram
+UML 다이어그램
 -----------
 
 .. image:: uml/uml.png
    :alt: Alt SimpleFactory UML Diagram
    :align: center
 
-Code
+코드
 ----
 
-You can also find these code on `GitHub`_
+코드는 또한 `GitHub`_ 에서 볼 수 있습니다.
 
 ConcreteFactory.php
 

@@ -1,35 +1,32 @@
 `Singleton`_
 ============
 
-**THIS IS CONSIDERED TO BE AN ANTI-PATTERN! FOR BETTER TESTABILITY AND
-MAINTAINABILITY USE DEPENDENCY INJECTION!**
+**더 나은 테스트의 용이성과 의존성 주입을 사용한 유지 보수성을 위해 안티-패턴이 될 것인지 고려했습니다.**
 
-Purpose
+사용 목적
 -------
 
-To have only one instance of this object in the application that will
-handle all calls.
+어플리케이션에서 오직 하나의 객체 인스턴스를 가지고 모든 이벤트를 처리하는 것입니다.
 
-Examples
+예시
 --------
 
 -  DB Connector
--  Logger (may also be a Multiton if there are many log files for
-   several purposes)
--  Lock file for the application (there is only one in the filesystem
+-  Logger (여러 목적을 위해 많은 로그파일 있는 경우, multiton 패턴일 수 있습니다.)
+-  Lock file for the application (파일시스템은 하나만 존재합니다
    ...)
 
-UML Diagram
+UML 다이어그램
 -----------
 
 .. image:: uml/uml.png
    :alt: Alt Singleton UML Diagram
    :align: center
 
-Code
+코드
 ----
 
-You can also find these code on `GitHub`_
+코드는 또한 `GitHub`_ 에서 볼 수 있습니다.
 
 Singleton.php
 
