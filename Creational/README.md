@@ -4,6 +4,10 @@
 디자인 문제나 또는 복잡한 디자인을 추가하는 것이 객체 생성의 기본 형태입니다. 창조적 디자인 패턴으로 객체 생성을
 어떻게든 제어해서 이 문제를 해결해야 합니다.
 
+역주: 팩토리 패턴을 더 잘 이해하기 위해서 단순팩토리 -> 정적팩토리 -> 팩토리메소드 -> 추상팩토리 순으로 보시면
+좋습니다.
+
+
 * [추상팩토리(AbstractFactory)](AbstractFactory) [:notebook:](http://en.wikipedia.org/wiki/Abstract_factory_pattern)
 * [빌더(Builder)](Builder) [:notebook:](http://en.wikipedia.org/wiki/Builder_pattern)
 * [팩토리메소드(FactoryMethod)](FactoryMethod) [:notebook:](http://en.wikipedia.org/wiki/Factory_method_pattern)
