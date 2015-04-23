@@ -5,7 +5,7 @@ namespace DesignPatterns\Creational\AbstractFactory;
 /**
  * Class HtmlFactory
  *
- * HtmlFactory 은 HTML 구성요소에 대한 추상 팩토리입니다.
+ * HtmlFactory는 HTML 구성요소에 대한 추상 팩토리입니다.
  */
 class HtmlFactory extends AbstractFactory
 {

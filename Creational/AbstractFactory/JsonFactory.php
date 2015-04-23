@@ -5,7 +5,7 @@ namespace DesignPatterns\Creational\AbstractFactory;
 /**
  * Class JsonFactory
  *
- * JsonFactory는 JSON 구성요소에 대한 추상 팩토리 입니다. (예를 들어 ajax와 같은..)
+ * JsonFactory는 JSON 구성요소에 대한 추상 팩토리입니다. (예를 들어 ajax와 같은..)
  */
 class JsonFactory extends AbstractFactory
 {
