@@ -13,7 +13,8 @@ class ConcreteFactory
     protected $typeList;
 
     /**
-     * 사용자는 기본 값에 자신이 가진 list 타입을 주입하거나, 합칠 것이라고 상상할 수 있다. 
+     * 너만의 타입을 새로 주입할수도 있고,
+     * 기본값과 합쳐서 사용할 수 있습니다.
      */
     public function __construct()
     {
@@ -26,9 +27,9 @@ class ConcreteFactory
     /**
      * Creates a vehicle
      *
-     * @param string $type a known type key
+     * @param string $type 알고있는 타입값
      *
-     * @return VehicleInterface a new instance of VehicleInterface
+     * @return VehicleInterface VehicleInterface를 구현하여 생성된 인스턴스
      * @throws \InvalidArgumentException
      */
     public function createVehicle($type)

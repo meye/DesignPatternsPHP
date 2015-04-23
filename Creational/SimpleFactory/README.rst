@@ -1,15 +1,16 @@
-팩토리(Simple Factory)
-======================
+단순팩토리(Simple Factory)
+==========================
 
 사용 목적
 ---------
 
-ConcreteFactory는 simple factory 패턴입니다.
+ConcreteFactory(코드에 언급된)는 단순팩토리입니다.
 
-simple factory는 정적이지 않기 때문에 static factory와는 다릅니다.
-숙지할 점: static => global => evil!
+단순팩토리패턴은 정적이지 않기 때문에 정적팩토리패턴(Static Factory)과는 다릅니다.
+참고: 정적(static) => 전역(global) => 좋지않음(evil)!
 
-그러므로, 여러 팩토리들과, 다른 매개변수를 가지고 서브클래스를 만들거나, 모형(mock-up)을 만들 수 있습니다.
+그러므로, 서로 다른 패러매터를 가진 여러개의 팩토리를 가질 수 있고, 이것의 상속된 클래스를 만들 수 있으며, 이것의
+목업(mock-up)을 생성할 수 있습니다.
 
 UML 다이어그램
 --------------

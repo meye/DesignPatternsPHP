@@ -27,7 +27,7 @@ or [Download as PDF/Epub](https://readthedocs.org/projects/designpatternsphp/dow
 * [멀티턴(Multiton)](Creational/Multiton) (is considered an anti-pattern! :no_entry:)
 * [풀(Pool)](Creational/Pool) [:notebook:](http://en.wikipedia.org/wiki/Object_pool_pattern)
 * [프로토타입(Prototype)](Creational/Prototype) [:notebook:](http://en.wikipedia.org/wiki/Prototype_pattern)
-* [팩토리(SimpleFactory)](Creational/SimpleFactory)
+* [단순팩토리(SimpleFactory)](Creational/SimpleFactory)
 * [싱글턴(Singleton)](Creational/Singleton) [:notebook:](http://en.wikipedia.org/wiki/Singleton_pattern) (is considered an anti-pattern! :no_entry:)
 * [정적팩토리(StaticFactory)](Creational/StaticFactory)
 

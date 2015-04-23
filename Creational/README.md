@@ -10,6 +10,6 @@
 * [멀티턴(Multiton)](Multiton) (은 안티패턴이 될 수 있습니다! :no_entry:)
 * [풀(Pool)](Pool) [:notebook:](http://en.wikipedia.org/wiki/Object_pool_pattern)
 * [프로토타입(Prototype)](Prototype) [:notebook:](http://en.wikipedia.org/wiki/Prototype_pattern)
-* [팩토리(SimpleFactory)](SimpleFactory)
+* [단순팩토리(SimpleFactory)](SimpleFactory)
 * [싱글턴(Singleton)](Singleton) [:notebook:](http://en.wikipedia.org/wiki/Singleton_pattern) (은 안티패턴이 될 수 있습니다! :no_entry:)
 * [정적팩토리(StaticFactory)](StaticFactory)
