@@ -1,8 +1,8 @@
 멀티턴(Multiton)
 ================
 
-**안티패턴이 될 수 있기 때문에 사용에 고려해 보아야 합니다! 더 나은 테스트가능성(Testablity)와
-유지가능성(Maintainability)를 위해서 의존성 주입(Dependency Injection)을 사용하세요!**
+**안티패턴이 될 수 있기 때문에 사용에 고려해 보아야 합니다! 더 나은 테스트가능성(Testablity)과
+유지가능성(Maintainability)을 위해서 의존성 주입(Dependency Injection)을 사용하세요!**
 
 사용 목적
 ---------

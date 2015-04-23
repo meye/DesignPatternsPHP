@@ -8,7 +8,7 @@ namespace DesignPatterns\Creational\Singleton;
 class Singleton
 {
     /**
-     * @var Singleton reference to singleton instance
+     * @var Singleton singleton객체를 참조합니다.
      */
     private static $instance;
     
@@ -27,7 +27,7 @@ class Singleton
     }
 
     /**
-     * is not allowed to call from outside: private!
+     * 외부에서 호출되면 안됨: private!
      *
      */
     private function __construct()
@@ -35,7 +35,7 @@ class Singleton
     }
 
     /**
-     * prevent the instance from being cloned
+     * clone에 의해서 호출 되는 것 방지
      *
      * @return void
      */
@@ -44,7 +44,7 @@ class Singleton
     }
 
     /**
-     * prevent from being unserialized
+     * unserialized에 의해 인스턴스화 방지
      *
      * @return void
      */

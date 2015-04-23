@@ -20,7 +20,7 @@ class Multiton
     const INSTANCE_2 = '2';
 
     /**
-     * 이름 있는 인스턴스들을 저장
+     * 이름이 지정된 인스턴스들을 저장합니다.
      *
      * @var array
      */
@@ -35,7 +35,7 @@ class Multiton
     }
 
     /**
-     * 주어진 이름을 통해 인스턴스를 구합니다. e.g. Multiton::INSTANCE_1
+     * 주어진 이름을 통해 인스턴스를 가져옵니다. e.g. Multiton::INSTANCE_1
      * 게으른 초기화(Lazy Initialization)를 사용
      *
      * @param string $instanceName
