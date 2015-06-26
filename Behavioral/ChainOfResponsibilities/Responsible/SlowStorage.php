@@ -6,13 +6,13 @@ use DesignPatterns\Behavioral\ChainOfResponsibilities\Handler;
 use DesignPatterns\Behavioral\ChainOfResponsibilities\Request;
 
 /**
- * This is mostly the same code as FastStorage but in fact, it may greatly differs
+ * FastStorage와 코드가 거의 동일하지만, 사실은 크게 다를 수도 있습니다.
  *
- * One important fact about CoR: each item in the chain MUST NOT assume its position
- * in the chain. A CoR is not responsible if the request is not handled UNLESS
- * you make an "ExceptionHandler" which throws execption if the request goes there.
+ * CoR의 중요한 사실 하나: 연결 고리의 각 요소는 연결 고리 내에서 자신의 위치를
+ * 가정해서는 안됩니다. 요청이 올 경우 예외를 발생하는 "ExceptionHandler"를
+ * 만들지 않는 한, CoR은 요청이 처리되지 않더라도 아무 책임이 없습니다.
  *
- * To be really extendable, each handler doesn't know if there is something after it.
+ * 정말 연장할 수 있게 하려면, 각 핸들러는 그 뒤에 무엇이 있는지도 몰라야합니다.
  *
  */
 class SlowStorage extends Handler

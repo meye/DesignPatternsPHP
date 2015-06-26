@@ -45,7 +45,7 @@ class ChainTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($ret);
         $this->assertObjectHasAttribute('response', $request);
         $this->assertEquals('baz', $request->response);
-        // despite both handle owns the 'bar' key, the FastStorage is responding first
+        // 두 handle 모두 'bar'키를 가졌더라도, FastStorage가 먼저 응답합니다.
         $className = 'DesignPatterns\Behavioral\ChainOfResponsibilities\Responsible\FastStorage';
         $this->assertEquals($className, $request->forDebugOnly);
     }
@@ -61,7 +61,7 @@ class ChainTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($ret);
         $this->assertObjectHasAttribute('response', $request);
         $this->assertEquals('bar', $request->response);
-        // FastStorage has no 'foo' key, the SlowStorage is responding
+        // FastStorage는 'foo'키가 없습니다. SlowStorage가 응답합니다.
         $className = 'DesignPatterns\Behavioral\ChainOfResponsibilities\Responsible\SlowStorage';
         $this->assertEquals($className, $request->forDebugOnly);
     }
@@ -75,7 +75,7 @@ class ChainTest extends \PHPUnit_Framework_TestCase
         $ret = $this->chain->handle($request);
 
         $this->assertFalse($ret);
-        // the last responsible :
+        // 마지막 처리자(Responsible)
         $className = 'DesignPatterns\Behavioral\ChainOfResponsibilities\Responsible\SlowStorage';
         $this->assertEquals($className, $request->forDebugOnly);
     }

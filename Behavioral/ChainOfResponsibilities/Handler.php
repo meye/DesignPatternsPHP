@@ -3,12 +3,12 @@
 namespace DesignPatterns\Behavioral\ChainOfResponsibilities;
 
 /**
- * Handler is a generic handler in the chain of responsibilities
+ * Handler는 책임 연결 고리의 일반적인 핸들러입니다.
  *
- * Yes you could have a lighter CoR with a simpler handler but if you want your CoR
- * to be extendable and decoupled, it's a better idea to do things like that in real
- * situations. Usually, a CoR is meant to be changed everytime and evolves, that's
- * why we slice the workflow in little bits of code.
+ * 단순한 핸들러로 더 가벼운 CoR을 만들 수 있습니다만, CoR이 확장가능하고,
+ * 결합도를 낮추고 싶다면 실전에서는 이렇게 하는 것이 낫습니다. 일반적으로,
+ * CoR은 항상 변화하고 발전한다고 여겨지며, 그것이 바로 우리가 조금의 코드에서
+ * 흐름을 자르는 이유입니다.
  */
 abstract class Handler
 {
@@ -18,18 +18,18 @@ abstract class Handler
     private $successor = null;
 
     /**
-     * Append a responsibility to the end of chain
+     * 연결 고리의 끝에 책임을 추가합니다.
      *
-     * A prepend method could be done with the same spirit
+     * 동일한 생각에서 앞쪽에 추가하는 방법도 가능합니다.
      *
-     * You could also send the successor in the constructor but in PHP that is a
-     * bad idea because you have to remove the type-hint of the parameter because
-     * the last handler has a null successor.
+     * 생성자에 다음 처리자(successor)를 전달할 수 있지만, 마지막 핸들러는 null
+     * 처리자를 갖기 때문에 매개변수에 타입-힌트를 사용할 수 없습니다. 따라서,
+     * PHP에서는 좋은 생각이 아닙니다.
      *
-     * And if you override the constructor, that Handler can no longer have a
-     * successor. One solution is to provide a NullObject (see pattern).
-     * It is more preferable to keep the constructor "free" to inject services
-     * you need with the DiC of symfony2 for example.
+     * 그리고 생성자를 오버라이드한다면, 그 Handler는 다음 처리자를
+     * 갖지 않게됩니다. 해결 방법 한가지는 NullObject를 제공하는 것입니다.
+     * (패턴 참고) 생성자를 "자유롭게" 두고 symfony2의 DiC와 같은 것으로 필요한
+     * 서비스를 주입하는 것이 더 낫습니다.
      *
      * @param Handler $handler
      */
@@ -43,11 +43,11 @@ abstract class Handler
     }
 
     /**
-     * Handle the request.
+     * 요청을 처리(handle)합니다.
      *
-     * This approach by using a template method pattern ensures you that
-     * each subclass will not forget to call the successor. Besides, the returned
-     * boolean value indicates you if the request have been processed or not.
+     * 템플릿 메소드 패턴을 사용한 이런 방법은 각 서브 클래스들이 다음 처리자를
+     * 호출하는 것을 잊지 않도록 합니다. 그리고, 반환되는 부울 값은 요청이
+     * 처리되었는지 여부를 알려줍니다.
      *
      * @param Request $req
      *
@@ -58,7 +58,7 @@ abstract class Handler
         $req->forDebugOnly = get_called_class();
         $processed = $this->processing($req);
         if (!$processed) {
-            // the request has not been processed by this handler => see the next
+            // 요청이 이 핸들러에 의해서 처리되지 않았습니다. => 다음 핸들러를 봅니다.
             if (!is_null($this->successor)) {
                 $processed = $this->successor->handle($req);
             }
@@ -68,11 +68,11 @@ abstract class Handler
     }
 
     /**
-     * Each concrete handler has to implement the processing of the request
+     * 각각의 실제 핸들러는 요청을 처리하는 것을 구현해야 합니다.
      *
      * @param Request $req
      *
-     * @return bool true if the request has been processed
+     * @return bool 요청이 처리되었다면 true
      */
     abstract protected function processing(Request $req);
 }
