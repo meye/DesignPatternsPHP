@@ -1,37 +1,34 @@
-`Chain Of Responsibilities`_
-============================
+책임 연쇄 패턴(`Chain Of Responsibilities`_)
+=============================================
 
-Purpose:
---------
-
-To build a chain of objects to handle a call in sequential order. If one
-object cannot handle a call, it delegates the call to the next in the
-chain and so forth.
-
-Examples:
+사용 목적
 ---------
 
--  logging framework, where each chain element decides autonomously what
-   to do with a log message
--  a Spam filter
--  Caching: first object is an instance of e.g. a Memcached Interface,
-   if that "misses" it delegates the call to the database interface
--  Yii Framework: CFilterChain is a chain of controller action filters.
-   the executing point is passed from one filter to the next along the
-   chain, and only if all filters say "yes", the action can be invoked
-   at last.
+호출을 처리하기 위해서 순서대로 객체들의 연결 고리(Chain)를 만듭니다. 한 객체가
+호출을 처리하지 못하면, 연결 고리의 다음 객체로 그 호출을 위임하기를 계속합니다.
 
-UML Diagram
------------
+예시
+----
+
+-  연결 고리의 각 요소가 자율적으로 로그 메시지로 무엇을 할지 결정하는 로깅 프레임워크(logging framework)
+-  스팸 필터
+-  캐시(Caching): 첫번째 객체는 예를 들어 Memcached 인터페이스의 인스턴스이고,
+   이것이 "실패(misses)"하는 경우에는 데이터베이스 인터페이스에 이 호출을 위임합니다.
+-  Yii Framework: CFilterChain은 컨트롤러 액션 필터들의 연결 고리입니다.
+   실행 지점이 한 필터에서 연결 고리를 따라서 다음으로 전달되고,
+   모든 필터들이 "예"라고 할 경우에만 해당 액션이 마지막에 수행됩니다.
+
+UML 다이어그램
+--------------
 
 .. image:: uml/uml.png
    :alt: Alt ChainOfResponsibility UML Diagram
    :align: center
 
-Code
+코드
 ----
 
-You can also find these code on `GitHub`_
+코드는 `GitHub`_ 에서도 볼 수 있습니다.
 
 Request.php
 
@@ -57,8 +54,8 @@ Responsible/FastStorage.php
    :language: php
    :linenos:
 
-Test
-----
+테스트
+------
 
 Tests/ChainTest.php
 
